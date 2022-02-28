@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../fonts/EuclidCircularA-Medium.woff2") format("woff2"), url("../fonts/EuclidCircularA-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../fonts/EuclidCircularA-Regular.woff2") format("woff2"), url("../fonts/EuclidCircularA-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a, p, h1, h2, h3, h4, h5, h6, span, strong {
+  margin: 0;
+  padding: 0;
+  color: #404040;
+}
+
+body {
+  font-family: "Euclid Circular A", serif;
+  font-weight: 500;
+}
+
+.wrapper {
+  background: #FFEA11 url("../images/family.png") no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+.wrapper .head-left {
+  padding-left: 216px;
+  padding-bottom: 120px;
+}
+.wrapper .head-left .holidays-text {
+  margin-top: 230px;
+  margin-bottom: 14px;
+}
+.wrapper .head-left__bottom {
+  display: flex;
+}
+.wrapper .head-left__bottom .logo::after {
+  content: "";
+  float: right;
+  margin-left: 31px;
+  margin-right: 31px;
+  height: 100%;
+  width: 2px;
+  background: #ED1C24;
+}
+.wrapper main {
+  background: #FFFFFF;
+  border-radius: 43.8857px;
+  padding: 109px 130px 38px;
+  max-width: 1396px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  z-index: 3;
+  flex-direction: column;
+}
+.wrapper main h1 {
+  font-weight: 500;
+  font-size: 85.0286px;
+  line-height: 116%;
+  text-align: center;
+  font-style: normal;
+}
+.wrapper main .title {
+  margin-bottom: 17px;
+}
+.wrapper main h2 {
+  font-weight: 400;
+  font-size: 43.8857px;
+  line-height: 126%;
+  text-align: center;
+  margin-bottom: 83px;
+}
+.wrapper main .cards-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 33px;
+}
+.wrapper main .cards-box .card {
+  padding: 35px 32px;
+  background: #F2F2F2;
+  border-radius: 43.8857px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+}
+.wrapper main .cards-box .card .term {
+  font-size: 33px;
+  line-height: 136%;
+}
+.wrapper main .cards-box .card .buyer-type {
+  margin-bottom: 17px;
+  font-size: 31px;
+}
+.wrapper main .cards-box .card strong {
+  margin-top: -20px;
+  font-weight: 500;
+  font-size: 137.143px;
+  line-height: 100%;
+  text-align: center;
+}
+.wrapper main .cards-box .card .items-img {
+  margin-top: 24px;
+  background: url("../images/image4.png") no-repeat center;
+  height: 474px;
+}
+.wrapper main .cards-box .card .tooltip-box {
+  position: relative;
+  border-bottom: 1.3px solid rgba(255, 0, 92, 0.4);
+  width: 50%;
+  cursor: url("../images/Vector2.svg"), pointer;
+}
+.wrapper main .cards-box .card .tooltip-box .tooltip {
+  white-space: nowrap;
+  position: absolute;
+  padding: 6px 10px;
+  top: -70%;
+  left: 50%;
+  font-size: 12px;
+  line-height: 120%;
+  border: none;
+  background: #404040;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  color: #FFFFFF;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+.wrapper main .cards-box .card .copied .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s;
+}
+.wrapper main .cards-box .card .price {
+  margin-top: 56px;
+}
+.wrapper main .cards-box .card .discount {
+  display: flex;
+  margin: 152px auto 0;
+}
+.wrapper main .cards-box .card .correction {
+  font-size: 21.9429px;
+  line-height: 116%;
+  opacity: 0.5;
+  margin: auto 0 0;
+}
+.wrapper main .order-btn {
+  cursor: pointer;
+  font-size: 32.9143px;
+  line-height: 116%;
+  padding: 0 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 110px;
+  margin: 82px auto 40px;
+  max-width: 768px;
+  background: #FF005C;
+  border-radius: 82.2857px;
+}
+.wrapper main .qr {
+  margin: 0 auto;
+  width: 100px;
+}
+.wrapper .pink {
+  color: #FF005C;
+}
+.wrapper footer {
+  margin-top: -116px;
+  background: #F2F2F2;
+  position: relative;
+}
+.wrapper footer .grey-layout {
+  height: 199px;
+}
+.wrapper footer .footer {
+  position: relative;
+  background: #F2F2F2;
+  padding: 0 164px;
+  height: 137px;
+  display: flex;
+  align-items: center;
+}
+.wrapper footer .footer-logos {
+  display: flex;
+}
+.wrapper footer .footer-logos .logo {
+  padding-right: 17px;
+  border-right: 1px solid #ff005c;
+  margin-right: 17px;
+}
+.wrapper footer .footer-logos .logo img {
+  width: 72px;
+}
+.wrapper footer .footer-logos .samokat {
+  width: 190px;
+}
+.wrapper footer .footer p {
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 116%;
+  opacity: 0.5;
+  text-align: right;
+  max-width: 980px;
+}
+
+/*# sourceMappingURL=style.css.map */

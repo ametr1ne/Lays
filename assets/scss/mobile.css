@@ -1,0 +1,133 @@
+@media (max-width: 1024px) {
+  .wrapper {
+    background: #FFEA11 url("../images/bg-mobile.png") no-repeat;
+    background-size: 100%;
+    background-position-y: -235px;
+  }
+  .wrapper .head-left {
+    padding-left: 0;
+    padding-top: 55px;
+    padding-bottom: 302px;
+    text-align: center;
+  }
+  .wrapper .head-left .holidays-text {
+    width: 234px;
+    height: 80px;
+    margin-top: 0;
+  }
+  .wrapper .head-left__bottom {
+    justify-content: center;
+  }
+  .wrapper .head-left__bottom .logo img {
+    width: 51px;
+  }
+  .wrapper .head-left__bottom .logo::after {
+    width: 1px;
+    margin: 0 12px;
+  }
+  .wrapper .head-left__bottom img {
+    width: 134px;
+  }
+  .wrapper main {
+    max-width: unset;
+    margin: 0 10px;
+    padding: 25px 15px 32px;
+    border-radius: 16px;
+  }
+  .wrapper main .title {
+    font-size: 32px;
+  }
+  .wrapper main h2 {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .wrapper main .cards-box {
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+  }
+  .wrapper main .cards-box .card {
+    padding: 20px;
+    border-radius: 16px;
+    min-height: 320px;
+  }
+  .wrapper main .cards-box .card:first-child {
+    padding-bottom: 8px;
+  }
+  .wrapper main .cards-box .card .term {
+    font-size: 20px;
+  }
+  .wrapper main .cards-box .card .term svg {
+    width: 12px;
+    height: 16px;
+  }
+  .wrapper main .cards-box .card .third {
+    max-width: 160px;
+  }
+  .wrapper main .cards-box .card .buyer-type {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .wrapper main .cards-box .card .items-img {
+    margin-top: 8px;
+    background-size: cover;
+    height: 230px;
+  }
+  .wrapper main .cards-box .card .tooltip-box .tooltip {
+    top: -100%;
+    left: 40%;
+  }
+  .wrapper main .cards-box .card .price {
+    margin-top: 57px;
+  }
+  .wrapper main .cards-box .card .discount {
+    margin-top: 27px;
+  }
+  .wrapper main .cards-box .card .discount svg {
+    width: 31px;
+    height: 31px;
+  }
+  .wrapper main .cards-box .card strong {
+    margin-top: -10px;
+    font-size: 74px;
+  }
+  .wrapper main .cards-box .card .correction {
+    font-size: 14px;
+  }
+  .wrapper main .order-btn {
+    margin-top: 32px;
+    margin-bottom: 17px;
+    width: 100%;
+    height: 46px;
+    font-size: 16px;
+    padding: 0;
+  }
+  .wrapper main .qr {
+    width: 73px;
+  }
+  .wrapper footer .grey-layout {
+    height: 166px;
+  }
+  .wrapper footer .footer {
+    padding: 0 15px;
+    flex-direction: column;
+    height: unset;
+  }
+  .wrapper footer .footer-logos .logo {
+    margin-right: 9px;
+    padding-right: 9px;
+  }
+  .wrapper footer .footer-logos .logo img {
+    width: 40px;
+  }
+  .wrapper footer .footer-logos .samokat {
+    width: 104px;
+  }
+  .wrapper footer .footer p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

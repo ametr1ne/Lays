@@ -1,0 +1,169 @@
+@media (max-width: 1024px) {
+  .wrapper {
+    background: #FFEA11 url("../images/bg-mobile.png") no-repeat;
+    background-size: 100%;
+    background-position-y: -235px;
+
+    .head-left {
+      padding-left: 0;
+      padding-top: 55px;
+      padding-bottom: 302px;
+      text-align: center;
+
+      .holidays-text {
+        width: 234px;
+        height: 80px;
+        margin-top: 0;
+      }
+
+      &__bottom {
+        justify-content: center;
+
+        .logo {
+          img {
+            width: 51px;
+          }
+
+          &::after {
+            width: 1px;
+            margin: 0 12px;
+          }
+        }
+
+        img {
+          width: 134px;
+        }
+      }
+    }
+
+    main {
+      max-width: unset;
+      margin: 0 10px;
+      padding: 25px 15px 32px;
+      border-radius: 16px;
+
+      .title {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin-bottom: 24px;
+      }
+
+      .cards-box {
+        grid-template-columns: 1fr;
+        grid-row-gap: 16px;
+
+        .card {
+          padding: 20px;
+          border-radius: 16px;
+          min-height: 320px;
+
+          &:first-child {
+            padding-bottom: 8px;
+          }
+
+          .term {
+            font-size: 20px;
+
+            svg {
+              width: 12px;
+              height: 16px;
+            }
+          }
+
+          .third {
+            max-width: 160px;
+          }
+
+          .buyer-type {
+            margin-bottom: 8px;
+            font-size: 18px;
+          }
+
+          .items-img {
+            margin-top: 8px;
+            background-size: cover;
+            height: 230px;
+          }
+
+          .tooltip-box {
+            .tooltip {
+              top: -100%;
+              left: 40%;
+            }
+          }
+
+          .price {
+            margin-top: 57px;
+          }
+
+          .discount {
+            margin-top: 27px;
+
+            svg {
+              width: 31px;
+              height: 31px;
+            }
+          }
+
+          strong {
+            margin-top: -10px;
+            font-size: 74px;
+          }
+
+          .correction {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .order-btn {
+        margin-top: 32px;
+        margin-bottom: 17px;
+        width: 100%;
+        height: 46px;
+        font-size: 16px;
+        padding: 0;
+      }
+
+      .qr {
+        width: 73px;
+      }
+    }
+
+    footer {
+      .grey-layout {
+        height: 166px;
+      }
+
+      .footer {
+        padding: 0 15px;
+        flex-direction: column;
+        height: unset;
+
+        &-logos {
+          .logo {
+            margin-right: 9px;
+            padding-right: 9px;
+            img {
+              width: 40px;
+            }
+          }
+
+          .samokat {
+            width: 104px;
+          }
+        }
+
+        p {
+          margin-top: 20px;
+          text-align: center;
+          font-size: 12px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
