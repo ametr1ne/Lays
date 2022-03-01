@@ -9,20 +9,37 @@ $('.tooltip-box').click(function (e) {
     $tmp.val($('.promo').text()).select();
     document.execCommand("copy");
     $tmp.remove();
-})
+});
 
 $(window).resize(function () {
+
+    let userAgent = navigator.userAgent.toLowerCase();
+    let Mozila = /firefox/.test(userAgent);
 
     if ($(this).width() > 1024) {
         let width = $(this).width();
         let zoom = width / 1920;
-        $('.wrapper').css('zoom', zoom);
-        $('.wrapper').css('-moz-transform', 'scale('+zoom+')');
-
+        $('html').css({
+            'zoom': zoom,
+            'height': 'calc(100% / ' + zoom + ')',
+            '-moz-transform': 'scale(' + zoom + ')',
+            '-moz-transform-origin': 'left top'
+        });
+        if (Mozila) {
+            $('html').css('width', 'calc(100% / ' + zoom + ')');
+        }
     } else {
         let width = $(this).width();
         let zoom = width / 320;
-        $('.wrapper').css('zoom', zoom);
+        $('html').css({
+            'zoom': zoom,
+            'height': 'calc(100% / ' + zoom + ')',
+            '-moz-transform': 'scale(' + zoom + ')',
+            '-moz-transform-origin': 'left top'
+        });
+        if (Mozila) {
+            $('html').css('width', 'calc(100% / ' + zoom + ')');
+        }
     }
 });
 
